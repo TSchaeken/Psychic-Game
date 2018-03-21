@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="gameIntro">
+
+        <p>Flex your psychic muscles and do your best to guess the mystery number!</p>
+        <p>You have a total of 5 attempts per round... don't let the computer get to 3 points first!</p>
+        <p>Set your min and max here!
+            <input type="number" class="inputNum" id="minNum" placeholder="min">
+            <input type="number" class="inputNum" id="maxNum" placeholder="max">
+            <button onclick="setValues()">start</button>
+        </p>
+    </div>
+
+    <div id="gameBody">
+
+        <p>Your mystery number lies between
+            <span id="minNumDsp"></span> and
+            <span id="maxNumDsp"></span>
+        </p>
+        <p>Enter the number your psychic abilities think is right: <input type="number" class="inputNum" id="userGuess"><button onclick="checker()">Check</button></p>
+        <p id="totalWin"></p>
+        <p id="compWin"></p>
+        <p id="guessRem"></p>
+        <p id="status"></p>
+    </div>
+
+
+    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/game2.js"></script>
+
+</body>
+
+</html>

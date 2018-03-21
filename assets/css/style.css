@@ -1,0 +1,22 @@
+body {
+    background: url("../images/kyle-gregory-devaras-241280-unsplash.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+#gameIntro {
+    color:white;
+}
+
+#gameBody {
+    color:white;
+    display:none;
+}
+
+.inputNum {
+    width:50px;
+    margin:0 10px;
+}
