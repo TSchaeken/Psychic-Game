@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div id="firstBody">
+        <h1>Try your best to guess the number correctly!</h1>
+        <h2>You only 5 attempts per round, so choose your min and max carefully!</h2>
+        <h2>Whoever gets to 3 wins total takes home the title.</h2>
+        <input type="text" id="number1" placeholder="min">
+        <input type="text" id="number2" placeholder="max">
+        <input type="submit" id="startButton" value="Press Me!">
+    </div>
+    <div id="gameBody">
+            <div id="placeMin"></div>
+            <div id="placeMax"></div>
+            <p id="current-score">Your current score is: 0</p>
+            <p id="attempts-remaining">You have 5 attempts remaining</p>
+            
+            <input type="text" id="guessNum" placeholder="best guess">
+            <input type="submit" id="gameButton" value="Guess">
+            <p id="status"></p>
+
+            
+    </div>
+
+
+    <script id="number" src="assets/game.js"></script>
+    
+</body>
+</html>
