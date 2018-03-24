@@ -36,11 +36,11 @@ document.getElementById('startButton').onclick = function () {
 document.getElementById('gameButton').onclick = function () {
     if (gameData.guess() == gameData.compGuess) {
         gameData.score++;
-        gameData.attempts = 5;
+        gameData.attempts = 8;
         gameData.scoreUpdate();
         gameData.compGuess = gameData.randomize();
         console.log(gameData.compGuess)
-        document.getElementById("status").innerHTML = "Good work! You must be psychic!"
+        document.getElementById("status").innerHTML = "Good work! You must be psychic! The game has chosen a new number, keep playing!"
     }
     else if (gameData.guess() > gameData.compGuess){
         gameData.attempts--;
